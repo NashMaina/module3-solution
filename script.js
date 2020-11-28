@@ -35,7 +35,6 @@ WARNING!!! WARNING!!!
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 (function () {
 
-"use strict";
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
 // STEP 10: (NOTHING TO DO. ALREADY DONE FOR YOU)
@@ -60,11 +59,10 @@ for (var i = 0; i < names.length; i++) {
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (firstLetter === 'j') {
-        byeSpeaker.speak(names[i]);
-        }
-    else {
-        helloSpeaker.speak(names[i]);
-        }
+    byeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
 }
 
 })();
